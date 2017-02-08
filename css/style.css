@@ -7,6 +7,7 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+
 }
 
 body{
@@ -16,7 +17,6 @@ body{
     padding: 0px;
     overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
-
 }
 
 .miniHeader {
@@ -25,6 +25,16 @@ body{
 	margin: 0px;
 }
 
+header {
+	height:50px;
+	background: #f0f0f0;	
+	overflow: auto;
+	margin: 0px auto;
+	border-top: 1px solid gold !important;	
+  	margin-top: -1px !important;
+  	margin-bottom: -60px;
+  	padding-bottom: 15px;
+}
 
 #top-nav {
 	display: inline-block;
@@ -76,13 +86,14 @@ h1 span {
 .jumbo {
   background: url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;  
-  height: 800px;
+  height: 700px;
   padding: 0;
   margin: 0;
 }
 hr {
-	border-color: #4B5121;
-	border-width: 2px;
+	
+	border-top: 2px solid gold !important;
+	 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 h1 {
@@ -129,7 +140,9 @@ h2 {
 	font-size: 34px;
 	text-align: center;	
 	text-transform: capitalize;
+	
 }
+
 #sixBoxes {
 	overflow: hidden;
 	width: 1000px;
@@ -150,7 +163,8 @@ h2 {
 #sixBoxes #box3 {
 	float: left;
 	width: 300px;
-	padding-left: 15px;	
+	padding-left: 15px;
+	padding-bottom: 25px;	
 }
 
 #sixBoxes #box4 {
@@ -171,14 +185,15 @@ h2 {
 
 img {
 	border-radius: 50%;
-	display: block;
+	display: block;	
     margin-left: auto;
     margin-right: auto;
     border-width: 2px;
     -webkit-box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.75);    
 }
+
 
 
 /****** GRID ******/
@@ -187,20 +202,30 @@ img {
 	 
 	width: 1200px; 
     margin: 0 auto;
+    margin-bottom: -90px;
 }
 .half-width {
     width: 600px;
     float: left;
     
 }
-.third-width {
+.third-width1 {
+    width: 400px;
+    float: left;
+    margin-left: 10px;
+}
+.third-width2 {
+    width: 400px;
+    float: left;
+}
+.third-width3 {
     width: 400px;
     float: left;
 }
 
 /****** WORK ******/
 
-#work .full-width {    
+#work .full-width {        
     background-color: #A1B752;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -209,14 +234,32 @@ img {
 	text-align: justify;
 	padding: 50px 60px 40px;	
 	overflow: hidden;
-
 }
+
 #work .full-width h2{
 	padding-bottom: 25px;
+	font-family: serif;
 }	
 
 #work .full-width .third-width{
-	padding-bottom: -25px;
+	padding-bottom: 25px;
+	margin-left: 190px;
+
+}
+
+#work .third-width{
+	padding-bottom: 25px;
+	margin-left: 140px;
+
+}
+#work .third-width img{
+	color: red;
+	box-shadow: none;
+}
+#work .third-width p{
+	color: #000000;
+	font-weight: normal;
+
 }
 
 #work h3 {
@@ -235,12 +278,16 @@ img {
     color: #ffffff; /*2b2b2b;*/
     padding: 0 35px;
     margin-left: 40px;
+    line-height: 1.0;
 }
+
+
 /**Footer**/
-.footer-distributed{
+.footerBoxes{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
+	border-top: 1px solid gold !important;
 	width: 100%;
 	font: bold 16px sans-serif;
 	text-align: left;
@@ -251,38 +298,38 @@ img {
 
 /* Footer left */
 
-.footer-distributed .footer-left{
+.footerBoxes .footer-left{
 	float: left;
 }
 
 /* The company logo */
 
-.footer-distributed h3{
+.footerBoxes h3{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
 	margin: 0 0 10px;
 }
 
-.footer-distributed h3 span{
+.footerBoxes h3 span{
 	color:  #5383d3;
 }
 
 /* Footer links */
 
-.footer-distributed .footer-links{
+.footerBoxes .footer-links{
 	color:  #ffffff;
 	margin: 0 0 10px;
 	padding: 0;
 }
 
-.footer-distributed .footer-links a{
+.footerBoxes .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
 }
 
-.footer-distributed .footer-company-name{
+.footerBoxes .footer-company-name{
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
@@ -291,11 +338,11 @@ img {
 
 /* Footer social icons */
 
-.footer-distributed .footer-icons{
+.footerBoxes .footer-icons{
 	margin-top: 40px;
 }
 
-.footer-distributed .footer-icons a{
+.footerBoxes .footer-icons a{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
@@ -314,11 +361,11 @@ img {
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+.footerBoxes .footer-right{
 	float: right;
 }
 
-.footer-distributed .footer-right p{
+.footerBoxes .footer-right p{
 	display: inline-block;
 	vertical-align: top;
 	margin: 15px 42px 0 0;
@@ -327,12 +374,12 @@ img {
 
 /* The contact form */
 
-.footer-distributed form{
+.footerBoxes form{
 	display: inline-block;
 }
 
-.footer-distributed form input,
-.footer-distributed form textarea{
+.footerBoxes form input,
+.footerBoxes form textarea{
 	display: block;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -350,31 +397,31 @@ img {
 	padding: 18px;
 }
 
-.footer-distributed ::-webkit-input-placeholder {
+.footerBoxes ::-webkit-input-placeholder {
 	color:  #5c666b;
 }
 
-.footer-distributed ::-moz-placeholder {
+.footerBoxes ::-moz-placeholder {
 	color:  #5c666b;
 	opacity: 1;
 }
 
-.footer-distributed :-ms-input-placeholder{
+.footerBoxes :-ms-input-placeholder{
 	color:  #5c666b;
 }
 
 
-.footer-distributed form input{
+.footerBoxes form input{
 	height: 55px;
 	margin-bottom: 15px;
 }
 
-.footer-distributed form textarea{
+.footerBoxes form textarea{
 	height: 100px;
 	margin-bottom: 20px;
 }
 
-.footer-distributed form button{
+.footerBoxes form button{
 	border-radius: 3px;
 	background-color:  #33383b;
 	color: #ffffff;
@@ -388,20 +435,20 @@ img {
 
 @media (max-width: 1000px) {
 
-	.footer-distributed {
+	.footerBoxes {
 		font: bold 14px sans-serif;
 	}
 
-	.footer-distributed .footer-company-name{
+	.footerBoxes .footer-company-name{
 		font-size: 12px;
 	}
 
-	.footer-distributed form input,
-	.footer-distributed form textarea{
+	.footerBoxes form input,
+	.footerBoxes form textarea{
 		width: 250px;
 	}
 
-	.footer-distributed form button{
+	.footerBoxes form button{
 		padding: 10px 35px;
 	}
 
@@ -409,29 +456,33 @@ img {
 
 @media (max-width: 800px) {
 
-	.footer-distributed{
+	.footerBoxes{
 		padding: 30px;
 	}
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
+	.footerBoxes .footer-left,
+	.footerBoxes .footer-right{
 		float: none;
 		max-width: 300px;
 		margin: 0 auto;
 	}
 
-	.footer-distributed .footer-left{
+	.footerBoxes .footer-left{
 		margin-bottom: 40px;
 	}
 
-	.footer-distributed form{
+	.footerBoxes form{
 		margin-top: 30px;
 	}
 
-	.footer-distributed form{
+	.footerBoxes form{
 		display: block;
 	}
 
-	.footer-distributed form button{
+	.footerBoxes form button{
 		float: none;
 	}
+
+	.mywidth {
+  width: 100px;   
+}
